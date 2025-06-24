@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Bikes - MotorBike World</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./new.css">
+</head>
+<body>
+    <!-- Fixed Navigation Bar -->
+    <div class="navbar-container" id="navbar">
+        <div class="container">
+            <nav class="navbar">
+                <a href="#" class="logo">M<span>B</span>W</a>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="new bikes.html" class="active">New Bikes</a></li>
+                    <li><a href="used bikes.html">Used Bikes</a></li>
+                    <li><a href="#">Gear & Accessories</a></li>
+                    <li><a href="#">Parts</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+                <button class="mobile-menu-btn">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </nav>
+        </div>
+    </div>
+    
+    <!-- New Bikes Hero -->
+    <section class="new-bikes-hero">
+        <div class="container">
+            <h1>Discover Our New Motorcycles</h1>
+            <p>Explore the latest models from the world's leading manufacturers. Find your perfect ride today.</p>
+            <div class="hero-buttons">
+                <a href="#bikes" class="btn">View Collection</a>
+                <a href="#offers" class="btn btn-outline">Special Offers</a>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Filter Section -->
+    <section class="filter-section">
+        <div class="container">
+            <div class="filter-container">
+                <div class="filter-group">
+                    <label for="bike-type">Bike Type</label>
+                    <select id="bike-type">
+                        <option value="all">All Types</option>
+                        <option value="sport">Sport</option>
+                        <option value="cruiser">Cruiser</option>
+                        <option value="adventure">Adventure</option>
+                        <option value="touring">Touring</option>
+                        <option value="naked">Naked</option>
+                        <option value="scooter">Scooter</option>
+                    </select>
+                </div>
+                
+                <div class="filter-group">
+                    <label for="brand">Brand</label>
+                    <select id="brand">
+                        <option value="all">All Brands</option>
+                        <option value="yamaha">Yamaha</option>
+                        <option value="honda">Honda</option>
+                        <option value="kawasaki">Kawasaki</option>
+                        <option value="suzuki">Suzuki</option>
+                        <option value="bmw">BMW</option>
+                        <option value="ducati">Ducati</option>
+                    </select>
+                </div>
+                
+                <div class="filter-group">
+                    <label for="engine">Engine Size</label>
+                    <select id="engine">
+                        <option value="all">All Sizes</option>
+                        <option value="small">Up to 500cc</option>
+                        <option value="medium">501-800cc</option>
+                        <option value="large">801-1200cc</option>
+                        <option value="xlarge">1201cc+</option>
+                    </select>
+                </div>
+                
+                <div class="filter-group">
+                    <label for="price">Price Range</label>
+                    <div class="price-range">
+                        <input type="number" placeholder="Min" id="min-price">
+                        <span>-</span>
+                        <input type="number" placeholder="Max" id="max-price">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Bike Showcase -->
+    <section class="bike-showcase" id="bikes">
+        <div class="container">
+            <div class="section-title">
+                <h2>New Motorcycle Collection</h2>
+                <p>Discover our latest models from top manufacturers</p>
+            </div>
+            
+            <div class="bikes-grid">
+                <div class="bike-card">
+                    <div class="bike-badge">New Arrival</div>
+                    <div class="bike-image">
+                        <img src="./assets/yamaha 20mt-09.avif" alt="Yamaha MT-09">
+                    </div>
+                    <div class="bike-info">
+                        <div class="bike-make">Yamaha</div>
+                        <h3 class="bike-name">MT-09 SP</h3>
+                        <div class="bike-price">Ksh 1,450,000</div>
+                        
+                        <div class="bike-specs">
+                            <div class="spec-item">
+                                <div class="spec-icon"><i class="fas fa-tachometer-alt"></i></div>
+                                <div class="spec-value">119 HP</div>
+                            </div>
+                            <div class="spec-item">
+                                <div class="spec-icon"><i class="fas fa-bolt"></i></div>
+                                <div class="spec-value">889cc</div>
+                            </div>
+                            <div class="spec-item">
+                                <div class="spec-icon"><i class="fas fa-weight"></i></div>
+                                <div class="spec-value">193 kg</div>
+                            </div>
+                            <div class="spec-item">
+                                <div class="spec-icon"><i class="fas fa-gas-pump"></i></div>
+                                <div class="spec-value">4.2L/100km</div>
+                            </div>
+                        </div>
+                        
+                        <div class="bike-meta">
+                            <a href="#" class="btn">View Details</a>
+                            <a href="#" class="btn btn-outline" style="border-color: var(--primary); color: var(--primary);">Test Ride</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bike-card">
+                    <div class="bike-badge">Best Seller</div>
+                    <div class="bike-image">
+                        <img src="./assets/Yamaha-Tenere-700-Extreme-Edition_1000x.webp" alt="Yamaha Tenere 700">
+                    </div>
+                    <div class="bike-info">
+                        <div class="bike-make">Yamaha</div>
+                        <h3 class="bike-name">Tenere 700</h3>
+                        <div class="bike-price">Ksh 1,250,000</div>
+                        
+                        <div class="bike-specs">
+                            <div class="spec-item">
+                                <div class="spec-icon"><i class="fas fa-tachometer-alt"></i></div>
+                                <div class="spec-value">74 HP</div>
+                            </div>
+                            <div class="spec-item">
+                                <div class="spec-icon"><i class="fas fa-bolt"></i></div>
+                                <div class="spec-value">689cc</div>
+                            </div>
+                            <div class="spec-item">
+                                <div class="spec-icon"><i class="fas fa-weight"></i></div>
+                                <div class="spec-value">204 kg</div>
+                            </div>
+                            <div class="spec-item">
+                                <div class="spec-icon"><i class="fas fa-gas-pump"></i></div>
+                                <div class="spec-value">4.5L/100km</div>
+                            </div>
+                        </div>
+                        
+                        <div class="bike-meta">
+                            <a href="#" class="btn">View Details</a>
+                            <a href="#" class="btn btn-outline" style="border-color: var(--primary); color: var(--primary);">Test Ride</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bike-card">
+                    <div class="bike-badge">Limited Edition</div>
+                    <div class="bike-image">
+                        <img src="./assets/ducati monster sp.jpg" alt="Ducati Monster">
+                    </div>
+                    <div class="bike-info">
+                        <div class="bike-make">Ducati</div>
+                        <h3 class="bike-name">Monster SP</h3>
+                        <div class="bike-price">Ksh 2,150,000</div>
+                        
+                        <div class="bike-specs">
+                            <div class="spec-item">
+                                <div class="spec-icon"><i class="fas fa-tachometer-alt"></i></div>
+                                <div class="spec-value">111 HP</div>
+                            </div>
+                            <div class="spec-item">
+                                <div class="spec-icon"><i class="fas fa-bolt"></i></div>
+                                <div class="spec-value">937cc</div>
+                            </div>
+                            <div class="spec-item">
+                                <div class="spec-icon"><i class="fas fa-weight"></i></div>
+                                <div class="spec-value">188 kg</div>
+                            </div>
+                            <div class="spec-item">
+                                <div class="spec-icon"><i class="fas fa-gas-pump"></i></div>
+                                <div class="spec-value">5.1L/100km</div>
+                            </div>
+                        </div>
+                        
+                        <div class="bike-meta">
+                            <a href="#" class="btn">View Details</a>
+                            <a href="#" class="btn btn-outline" style="border-color: var(--primary); color: var(--primary);">Test Ride</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bike-card">
+                    <div class="bike-badge">New Model</div>
+                    <div class="bike-image">
+                        <img src="./assets/bmw offroad.avif" alt="BMW R 1250 GS">
+                    </div>
+                    <div class="bike-info">
+                        <div class="bike-make">BMW</div>
+                        <h3 class="bike-name">R 1250 GS Adventure</h3>
+                        <div class="bike-price">Ksh 3,250,000</div>
+                        
+                        <div class="bike-specs">
+                            <div class="spec-item">
+                                <div class="spec-icon"><i class="fas fa-tachometer-alt"></i></div>
+                                <div class="spec-value">136 HP</div>
+                            </div>
+                            <div class="spec-item">
+                                <div class="spec-icon"><i class="fas fa-bolt"></i></div>
+                                <div class="spec-value">1254cc</div>
+                            </div>
+                            <div class="spec-item">
+                                <div class="spec-icon"><i class="fas fa-weight"></i></div>
+                                <div class="spec-value">268 kg</div>
+                            </div>
+                            <div class="spec-item">
+                                <div class="spec-icon"><i class="fas fa-gas-pump"></i></div>
+                                <div class="spec-value">5.6L/100km</div>
+                            </div>
+                        </div>
+                        
+                        <div class="bike-meta">
+                            <a href="#" class="btn">View Details</a>
+                            <a href="#" class="btn btn-outline" style="border-color: var(--primary); color: var(--primary);">Test Ride</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bike-card">
+                    <div class="bike-badge">Popular</div>
+                    <div class="bike-image">
+                        <img src="./assets/Kawasaki-Ninja-ZX-10R-SE.webp" alt="Kawasaki Ninja">
+                    </div>
+                    <div class="bike-info">
+                        <div class="bike-make">Kawasaki</div>
+                        <h3 class="bike-name">Ninja ZX-10R</h3>
+                        <div class="bike-price">Ksh 2,850,000</div>
+                        
+                        <div class="bike-specs">
+                            <div class="spec-item">
+                                <div class="spec-icon"><i class="fas fa-tachometer-alt"></i></div>
+                                <div class="spec-value">203 HP</div>
+                            </div>
+                            <div class="spec-item">
+                                <div class="spec-icon"><i class="fas fa-bolt"></i></div>
+                                <div class="spec-value">998cc</div>
+                            </div>
+                            <div class="spec-item">
+                                <div class="spec-icon"><i class="fas fa-weight"></i></div>
+                                <div class="spec-value">207 kg</div>
+                            </div>
+                            <div class="spec-item">
+                                <div class="spec-icon"><i class="fas fa-gas-pump"></i></div>
+                                <div class="spec-value">6.3L/100km</div>
+                            </div>
+                        </div>
+                        
+                        <div class="bike-meta">
+                            <a href="#" class="btn">View Details</a>
+                            <a href="#" class="btn btn-outline" style="border-color: var(--primary); color: var(--primary);">Test Ride</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bike-card">
+                    <div class="bike-badge">New Arrival</div>
+                    <div class="bike-image">
+                        <img src="./assets/Honda  CRF1100DCT-Africa-Twin-Static.jpg" alt="Honda Africa Twin">
+                    </div>
+                    <div class="bike-info">
+                        <div class="bike-make">Honda</div>
+                        <h3 class="bike-name">Africa Twin Adventure Sports</h3>
+                        <div class="bike-price">Ksh 2,350,000</div>
+                        
+                        <div class="bike-specs">
+                            <div class="spec-item">
+                                <div class="spec-icon"><i class="fas fa-tachometer-alt"></i></div>
+                                <div class="spec-value">102 HP</div>
+                            </div>
+                            <div class="spec-item">
+                                <div class="spec-icon"><i class="fas fa-bolt"></i></div>
+                                <div class="spec-value">1084cc</div>
+                            </div>
+                            <div class="spec-item">
+                                <div class="spec-icon"><i class="fas fa-weight"></i></div>
+                                <div class="spec-value">248 kg</div>
+                            </div>
+                            <div class="spec-item">
+                                <div class="spec-icon"><i class="fas fa-gas-pump"></i></div>
+                                <div class="spec-value">5.2L/100km</div>
+                            </div>
+                        </div>
+                        
+                        <div class="bike-meta">
+                            <a href="#" class="btn">View Details</a>
+                            <a href="#" class="btn btn-outline" style="border-color: var(--primary); color: var(--primary);">Test Ride</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Special Offers -->
+    <section class="special-offers" id="offers">
+        <div class="container">
+            <div class="section-title">
+                <h2>Special Offers</h2>
+                <p>Limited time deals on our premium motorcycles</p>
+            </div>
+            
+            <div class="offers-grid">
+                <div class="offer-card yamaha">
+                    <div class="offer-badge">Save Ksh 150,000</div>
+                    <h3>Yamaha MT-07</h3>
+                    <p>The perfect balance of performance and agility. The MT-07 delivers an exhilarating ride with its 689cc parallel-twin engine.</p>
+                    
+                    <div class="offer-details">
+                        <div class="offer-price">Ksh 950,000 <span class="original-price">Ksh 1,100,000</span></div>
+                        <p>Offer ends: 30 June 2023</p>
+                        <a href="#" class="btn" style="margin-top: 1rem;">Claim Offer</a>
+                    </div>
+                </div>
+                
+                <div class="offer-card kawasaki">
+                    <div class="offer-badge">0% Financing</div>
+                    <h3>Kawasaki Versys 650</h3>
+                    <p>Get 36 months 0% financing on the versatile Versys 650. Perfect for commuting and weekend adventures.</p>
+                    
+                    <div class="offer-details">
+                        <div class="offer-price">Ksh 1,050,000</div>
+                        <p>Monthly: Ksh 29,166 at 0% APR</p>
+                        <a href="#" class="btn" style="margin-top: 1rem;">Apply Now</a>
+                    </div>
+                </div>
+                
+                <div class="offer-card suzuki">
+                    <div class="offer-badge">Free Gear Package</div>
+                    <h3>Suzuki V-Strom 650</h3>
+                    <p>Buy any new V-Strom 650 and receive a free premium gear package worth Ksh 75,000.</p>
+                    
+                    <div class="offer-details">
+                        <div class="offer-price">Ksh 1,150,000</div>
+                        <p>Includes helmet, jacket and gloves</p>
+                        <a href="#" class="btn" style="margin-top: 1rem;">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <div class="container">
+            <div class="section-title">
+                <h2>Customer Experiences</h2>
+                <p>What riders say about their new bikes from MotorBike World</p>
+            </div>
+            
+            <div class="testimonial-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        "I bought my Yamaha MT-09 from MotorBike World and the experience was fantastic. Their staff helped me choose the perfect bike and the financing process was smooth and straightforward."
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">
+                            <img src="./assets/close-up-smiley-man-with-glasses.jpg" alt="James Kariuki">
+                        </div>
+                        <div class="author-info">
+                            <h4>James Kariuki</h4>
+                            <p>Yamaha MT-09 Owner</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        "The team at MotorBike World made buying my first big bike an incredible experience. They took the time to understand my needs and recommended the perfect Honda Africa Twin for my adventure trips."
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">
+                            <img src="./assets/happy-african-woman-moto-helmet-sitting-modern-motorbike-outdoors-while-looking-showing-peace-camera.jpg" alt="Sarah Mwangi">
+                        </div>
+                        <div class="author-info">
+                            <h4>Sarah Mwangi</h4>
+                            <p>Honda Africa Twin Owner</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        "I've been riding for 15 years and this was the best dealership experience I've ever had. The Ducati Monster SP I bought is an absolute dream machine, and the after-sales support has been exceptional."
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">
+                            <img src="./assets/portrait-young-man-with-afro-dreadlocks-white-t-shirt-outdoors.jpg" alt="David Omondi">
+                        </div>
+                        <div class="author-info">
+                            <h4>David Omondi</h4>
+                            <p>Ducati Monster SP Owner</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Newsletter Section -->
+    <section class="newsletter">
+        <div class="container">
+            <h2>Stay Updated on New Models</h2>
+            <p>Subscribe to be the first to know about new arrivals and exclusive offers</p>
+            <form class="newsletter-form">
+                <input type="email" placeholder="Enter your email address" required>
+                <button type="submit" class="btn">Subscribe Now</button>
+            </form>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h4>About MotorBike World</h4>
+                    <p>Kenya's premier destination for premium motorcycles, riding gear, and expert service. Experience the freedom of the open road with us.</p>
+                    <div class="social-links" style="margin-top: 1rem;">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>New Bikes</h4>
+                    <ul>
+                        <li><a href="new bikes.html">Sport Bikes</a></li>
+                        <li><a href="new bikes.html">Adventure Touring</a></li>
+                        <li><a href="new bikes.html">Cruisers</a></li>
+                        <li><a href="new bikes.html">Naked Bikes</a></li>
+                        <li><a href="new bikes.html">Scooters</a></li>
+                        <li><a href="new bikes.html">Electric Motorcycles</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Customer Service</h4>
+                    <ul>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">FAQs</a></li>
+                        <li><a href="#">Financing Options</a></li>
+                        <li><a href="#">Test Ride Booking</a></li>
+                        <li><a href="#">Warranty Information</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Contact Info</h4>
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt"></i> Moi Avenue, Nairobi, Kenya</li>
+                        <li><i class="fas fa-phone"></i> +254 700 123 456</li>
+                        <li><i class="fas fa-envelope"></i> info@motorbikeworld.co.ke</li>
+                        <li><i class="fas fa-clock"></i> Mon-Fri: 8:30AM - 6PM</li>
+                        <li><i class="fas fa-clock"></i> Sat: 9AM - 4PM</li>
+                        <li><i class="fas fa-clock"></i> Sun: Closed</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 MotorBike World. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+    
+<script src="./new.js"></script>   
+</body>
+</html>

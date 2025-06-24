@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Used Bikes - MotorBike World</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./used.css">
+</head>
+<body>
+    <!-- Fixed Navigation Bar -->
+    <div class="navbar-container" id="navbar">
+        <div class="container">
+            <nav class="navbar">
+                <a href="#" class="logo">M<span>B</span>W</a>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="new bikes.html">New Bikes</a></li>
+                    <li><a href="used bikes.html" class="active">Used Bikes</a></li>
+                    <li><a href="#">Gear & Accessories</a></li>
+                    <li><a href="#">Parts</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+                <button class="mobile-menu-btn">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </nav>
+        </div>
+    </div>
+    
+    <!-- Used Bikes Hero -->
+    <section class="used-bikes-hero">
+        <div class="container">
+            <h1>Quality Used Motorcycles</h1>
+            <p>Discover great value on reliable pre-owned bikes, budget-friendly options, and trusted brands from around the world.</p>
+            <div class="hero-buttons">
+                <a href="#bikes" class="btn">Browse Inventory</a>
+                <a href="#offers" class="btn btn-outline">Budget Deals</a>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Filter Section -->
+    <section class="filter-section">
+        <div class="container">
+            <div class="filter-container">
+                <div class="filter-group">
+                    <label for="bike-type">Bike Type</label>
+                    <select id="bike-type">
+                        <option value="all">All Types</option>
+                        <option value="commuter">Commuter</option>
+                        <option value="scooter">Scooter</option>
+                        <option value="cruiser">Cruiser</option>
+                        <option value="sports">Sports</option>
+                        <option value="offroad">Off-Road</option>
+                        <option value="tourer">Tourer</option>
+                    </select>
+                </div>
+                
+                <div class="filter-group">
+                    <label for="brand">Brand</label>
+                    <select id="brand">
+                        <option value="all">All Brands</option>
+                        <option value="honda">Honda</option>
+                        <option value="yamaha">Yamaha</option>
+                        <option value="bajaj">Bajaj</option>
+                        <option value="hero">Hero</option>
+                        <option value="tvs">TVS</option>
+                        <option value="lifan">Lifan</option>
+                        <option value="zongshen">Zongshen</option>
+                        <option value="suzuki">Suzuki</option>
+                    </select>
+                </div>
+                
+                <div class="filter-group">
+                    <label for="price">Price Range</label>
+                    <div class="price-range">
+                        <input type="number" placeholder="Min" id="min-price" value="50000">
+                        <span>-</span>
+                        <input type="number" placeholder="Max" id="max-price" value="300000">
+                    </div>
+                </div>
+                
+                <div class="filter-group">
+                    <label for="year">Year Range</label>
+                    <div class="price-range">
+                        <input type="number" placeholder="Min" id="min-year" value="2015">
+                        <span>-</span>
+                        <input type="number" placeholder="Max" id="max-year" value="2023">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Bike Showcase -->
+    <section class="bike-showcase" id="bikes">
+        <div class="container">
+            <div class="section-title">
+                <h2>Pre-Owned Motorcycle Collection</h2>
+                <p>Quality used bikes at affordable prices</p>
+            </div>
+            
+            <div class="bikes-grid">
+                <div class="bike-card">
+                    <div class="bike-badge">Low Mileage</div>
+                    <div class="bike-image">
+                        <img src="./assets/honda cb.avif" alt="Honda CB Shine">
+                    </div>
+                    <div class="bike-info">
+                        <div class="bike-make">Honda</div>
+                        <h3 class="bike-name">CB Shine 125</h3>
+                        <div class="bike-price">Ksh 85,000</div>
+                        
+                        <div class="bike-details">
+                            <div class="detail-item">
+                                <div class="detail-value">2019</div>
+                                <div class="detail-label">Year</div>
+                            </div>
+                            <div class="detail-item">
+                                <div class="detail-value">12,500 km</div>
+                                <div class="detail-label">Mileage</div>
+                            </div>
+                            <div class="detail-item">
+                                <div class="detail-value">125cc</div>
+                                <div class="detail-label">Engine</div>
+                            </div>
+                        </div>
+                        
+                        <div class="bike-description">
+                            Well-maintained Honda CB Shine with low mileage. Excellent condition with service history available.
+                        </div>
+                        
+                        <div class="bike-meta">
+                            <a href="#" class="btn">View Details</a>
+                            <a href="#" class="btn btn-outline" style="border-color: var(--primary); color: var(--primary);">Test Ride</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bike-card">
+                    <div class="bike-badge">Great Deal</div>
+                    <div class="bike-image">
+                        <img src="./assets/bajaj-pulsar-150.jpg" alt="Bajaj Pulsar">
+                    </div>
+                    <div class="bike-info">
+                        <div class="bike-make">Bajaj</div>
+                        <h3 class="bike-name">Pulsar 150</h3>
+                        <div class="bike-price">Ksh 95,000</div>
+                        
+                        <div class="bike-details">
+                            <div class="detail-item">
+                                <div class="detail-value">2020</div>
+                                <div class="detail-label">Year</div>
+                            </div>
+                            <div class="detail-item">
+                                <div class="detail-value">18,200 km</div>
+                                <div class="detail-label">Mileage</div>
+                            </div>
+                            <div class="detail-item">
+                                <div class="detail-value">150cc</div>
+                                <div class="detail-label">Engine</div>
+                            </div>
+                        </div>
+                        
+                        <div class="bike-description">
+                            Popular Bajaj Pulsar in excellent condition. Recently serviced with new tires. Great commuter bike.
+                        </div>
+                        
+                        <div class="bike-meta">
+                            <a href="#" class="btn">View Details</a>
+                            <a href="#" class="btn btn-outline" style="border-color: var(--primary); color: var(--primary);">Test Ride</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bike-card">
+                    <div class="bike-badge">Budget Bike</div>
+                    <div class="bike-image">
+                        <img src="./assets/Hero-Splendor-Plus.webp" alt="Hero Splendor">
+                    </div>
+                    <div class="bike-info">
+                        <div class="bike-make">Hero</div>
+                        <h3 class="bike-name">Splendor Plus</h3>
+                        <div class="bike-price">Ksh 75,000</div>
+                        
+                        <div class="bike-details">
+                            <div class="detail-item">
+                                <div class="detail-value">2018</div>
+                                <div class="detail-label">Year</div>
+                            </div>
+                            <div class="detail-item">
+                                <div class="detail-value">25,000 km</div>
+                                <div class="detail-label">Mileage</div>
+                            </div>
+                            <div class="detail-item">
+                                <div class="detail-value">100cc</div>
+                                <div class="detail-label">Engine</div>
+                            </div>
+                        </div>
+                        
+                        <div class="bike-description">
+                            Reliable Hero Splendor with excellent fuel efficiency. Perfect for daily commuting. Economical and dependable.
+                        </div>
+                        
+                        <div class="bike-meta">
+                            <a href="#" class="btn">View Details</a>
+                            <a href="#" class="btn btn-outline" style="border-color: var(--primary); color: var(--primary);">Test Ride</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bike-card">
+                    <div class="bike-badge">Chinese Brand</div>
+                    <div class="bike-image">
+                        <img src="./assets/lifan-kpr-6.avif">
+                    </div>
+                    <div class="bike-info">
+                        <div class="bike-make">Lifan</div>
+                        <h3 class="bike-name">KPR 200</h3>
+                        <div class="bike-price">Ksh 110,000</div>
+                        
+                        <div class="bike-details">
+                            <div class="detail-item">
+                                <div class="detail-value">2021</div>
+                                <div class="detail-label">Year</div>
+                            </div>
+                            <div class="detail-item">
+                                <div class="detail-value">8,500 km</div>
+                                <div class="detail-label">Mileage</div>
+                            </div>
+                            <div class="detail-item">
+                                <div class="detail-value">200cc</div>
+                                <div class="detail-label">Engine</div>
+                            </div>
+                        </div>
+                        
+                        <div class="bike-description">
+                            Sporty Lifan KPR 200 with low mileage. Well-maintained with full service history. Great value sports bike.
+                        </div>
+                        
+                        <div class="bike-meta">
+                            <a href="#" class="btn">View Details</a>
+                            <a href="#" class="btn btn-outline" style="border-color: var(--primary); color: var(--primary);">Test Ride</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bike-card">
+                    <div class="bike-badge">Indian Brand</div>
+                    <div class="bike-image">
+                        <img src="./assets/tvs 160.avif" alt="TVS Apache">
+                    </div>
+                    <div class="bike-info">
+                        <div class="bike-make">TVS</div>
+                        <h3 class="bike-name">Apache RTR 160</h3>
+                        <div class="bike-price">Ksh 120,000</div>
+                        
+                        <div class="bike-details">
+                            <div class="detail-item">
+                                <div class="detail-value">2020</div>
+                                <div class="detail-label">Year</div>
+                            </div>
+                            <div class="detail-item">
+                                <div class="detail-value">15,300 km</div>
+                                <div class="detail-label">Mileage</div>
+                            </div>
+                            <div class="detail-item">
+                                <div class="detail-value">160cc</div>
+                                <div class="detail-label">Engine</div>
+                            </div>
+                        </div>
+                        
+                        <div class="bike-description">
+                            Sporty TVS Apache with great performance. Well-maintained with recent service. Ready for city or highway.
+                        </div>
+                        
+                        <div class="bike-meta">
+                            <a href="#" class="btn">View Details</a>
+                            <a href="#" class="btn btn-outline" style="border-color: var(--primary); color: var(--primary);">Test Ride</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bike-card">
+                    <div class="bike-badge">Scooter</div>
+                    <div class="bike-image">
+                        <img src="./assets/suzuki access.avif" alt="Suzuki Access">
+                    </div>
+                    <div class="bike-info">
+                        <div class="bike-make">Suzuki</div>
+                        <h3 class="bike-name">Access 125</h3>
+                        <div class="bike-price">Ksh 90,000</div>
+                        
+                        <div class="bike-details">
+                            <div class="detail-item">
+                                <div class="detail-value">2019</div>
+                                <div class="detail-label">Year</div>
+                            </div>
+                            <div class="detail-item">
+                                <div class="detail-value">12,800 km</div>
+                                <div class="detail-label">Mileage</div>
+                            </div>
+                            <div class="detail-item">
+                                <div class="detail-value">125cc</div>
+                                <div class="detail-label">Engine</div>
+                            </div>
+                        </div>
+                        
+                        <div class="bike-description">
+                            Comfortable Suzuki Access scooter with good storage. Excellent condition, perfect for city commuting.
+                        </div>
+                        
+                        <div class="bike-meta">
+                            <a href="#" class="btn">View Details</a>
+                            <a href="#" class="btn btn-outline" style="border-color: var(--primary); color: var(--primary);">Test Ride</a>
+                        </div>
+                    </div>
+                </div>
+                
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Budget Brands Section -->
+    <section class="budget-brands">
+        <div class="container">
+            <div class="section-title">
+                <h2>Popular Budget Brands</h2>
+                <p>Quality motorcycles at affordable prices</p>
+            </div>
+            
+            <div class="brands-grid">
+                <div class="brand-item">
+                    <img src="./assets/bajaj.png" alt="Bajaj" style="height: 100px;">
+                </div>
+                <div class="brand-item">
+                    <img src="./assets/Hero_MotoCorp-Logo.wine.png" alt="Hero" style="height: 120px;">
+                </div>
+                <div class="brand-item">
+                    <img src="./assets/tvs.png" alt="TVS" style="height: 120px;">
+                </div>
+                <div class="brand-item">
+                    <img src="./assets/lifan.png" alt="Lifan" style="height: 120px;">
+                </div>
+                <div class="brand-item">
+                    <img src="./assets/Zongshen-Logo.png" alt="Zongshen" style="height: 100px;">
+                </div>
+                <div class="brand-item">
+                    <img src="./assets/sym.webp" alt="SYM" style="height: 100px;">
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Special Offers -->
+    <section class="special-offers" id="offers">
+        <div class="container">
+            <div class="section-title">
+                <h2>Budget Bike Offers</h2>
+                <p>Great deals on reliable used motorcycles</p>
+            </div>
+            
+            <div class="offers-grid">
+                <div class="offer-card">
+                    <div class="offer-badge">Under Ksh 100,000</div>
+                    <h3>Commuter Bike Special</h3>
+                    <p>Quality used commuter bikes from top brands. All bikes inspected and serviced with 3-month warranty.</p>
+                    
+                    <div class="offer-details">
+                        <div class="offer-price">Starting at Ksh 75,000</div>
+                        <p>Honda, Hero, Bajaj models available</p>
+                        <a href="#" class="btn" style="margin-top: 1rem;">View Bikes</a>
+                    </div>
+                </div>
+                
+                <div class="offer-card">
+                    <div class="offer-badge">0% Down Payment</div>
+                    <h3>Easy Financing</h3>
+                    <p>Get approved for financing with 0% down payment. Flexible terms up to 36 months on select used bikes.</p>
+                    
+                    <div class="offer-details">
+                        <div class="offer-price">Monthly from Ksh 4,500</div>
+                        <p>Quick approval process</p>
+                        <a href="#" class="btn" style="margin-top: 1rem;">Apply Now</a>
+                    </div>
+                </div>
+                
+                <div class="offer-card">
+                    <div class="offer-badge">Free Safety Kit</div>
+                    <h3>Rider Package</h3>
+                    <p>Buy any used bike over Ksh 100,000 and receive a free safety kit (helmet, gloves, and rain jacket).</p>
+                    
+                    <div class="offer-details">
+                        <div class="offer-price">Worth Ksh 15,000</div>
+                        <p>Limited time offer</p>
+                        <a href="#" class="btn" style="margin-top: 1rem;">Claim Offer</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Testimonials Section -->
+    <!-- <section class="testimonials">
+        <div class="container">
+            <div class="section-title">
+                <h2>Customer Experiences</h2>
+                <p>What our customers say about buying used bikes from us</p>
+            </div>
+            
+            <div class="testimonial-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        "I bought a used Honda CB Shine from MotorBike World and couldn't be happier. The bike was in perfect condition, and the price was very reasonable. The staff helped me with all the paperwork too!"
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">
+                            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=100&q=80" alt="James Kariuki">
+                        </div>
+                        <div class="author-info">
+                            <h4>Peter Maina</h4>
+                            <p>Honda CB Shine Owner</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        "As a student on a budget, I found the perfect Bajaj Pulsar at MotorBike World. The financing options made it affordable, and the bike has been reliable for my daily commute to campus."
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">
+                            <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=100&q=80" alt="Sarah Mwangi">
+                        </div>
+                        <div class="author-info">
+                            <h4>Grace Atieno</h4>
+                            <p>Bajaj Pulsar Owner</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        "I was skeptical about Chinese bikes, but the Lifan KPR I bought from MotorBike World has been fantastic. It was thoroughly inspected and came with a warranty. Great value for money!"
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">
+                            <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&w=100&q=80" alt="David Omondi">
+                        </div>
+                        <div class="author-info">
+                            <h4>David Kamau</h4>
+                            <p>Lifan KPR Owner</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+    
+    <!-- Newsletter Section -->
+    <section class="newsletter">
+        <div class="container">
+            <h2>Get Notified About New Arrivals</h2>
+            <p>Subscribe to receive alerts when new used bikes are added to our inventory</p>
+            <form class="newsletter-form">
+                <input type="email" placeholder="Enter your email address" required>
+                <button type="submit" class="btn">Subscribe Now</button>
+            </form>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h4>About MotorBike World</h4>
+                    <p>Your trusted source for quality used motorcycles. We specialize in affordable bikes from global brands with thorough inspections and warranties.</p>
+                    <div class="social-links" style="margin-top: 1rem;">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Used Bikes</h4>
+                    <ul>
+                        <li><a href="#">Budget Bikes (Under 100K)</a></li>
+                        <li><a href="#">Commuter Bikes</a></li>
+                        <li><a href="#">Scooters</a></li>
+                        <li><a href="#">Adventure Bikes</a></li>
+                        <li><a href="#">Chinese Brands</a></li>
+                        <li><a href="#">Indian Brands</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Buyer Services</h4>
+                    <ul>
+                        <li><a href="#">Bike Inspection</a></li>
+                        <li><a href="#">Financing Options</a></li>
+                        <li><a href="#">Warranty Packages</a></li>
+                        <li><a href="#">Trade-In Valuation</a></li>
+                        <li><a href="#">Delivery Service</a></li>
+                        <li><a href="#">After-Sales Support</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Contact Info</h4>
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt"></i> Moi Avenue, Nairobi, Kenya</li>
+                        <li><i class="fas fa-phone"></i> +254 700 123 456</li>
+                        <li><i class="fas fa-envelope"></i> usedbikes@motorbikeworld.co.ke</li>
+                        <li><i class="fas fa-clock"></i> Mon-Fri: 8:30AM - 6PM</li>
+                        <li><i class="fas fa-clock"></i> Sat: 9AM - 4PM</li>
+                        <li><i class="fas fa-clock"></i> Sun: Closed</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 MotorBike World. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+<script src="./used.js"></script>    
+</body>
+</html>
