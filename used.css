@@ -1,750 +1,758 @@
+:root {
+    --primary: #e41e25;
+    --secondary: #1a1a1a;
+    --accent: #f5a623;
+    --light: #f8f9fa;
+    --dark: #212529;
+    --gray: #6c757d;
+    --transition: all 0.3s ease;
+}
 
-        :root {
-            --primary: #e41e25;
-            --secondary: #1a1a1a;
-            --accent: #f5a623;
-            --light: #f8f9fa;
-            --dark: #212529;
-            --gray: #6c757d;
-            --transition: all 0.3s ease;
-        }
-        
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        
-        body {
-            font-family: 'Montserrat', sans-serif;
-            color: var(--dark);
-            background-color: #f0f2f5;
-            line-height: 1.6;
-            overflow-x: hidden;
-            font-weight: 400;
-            padding-top: 100px;
-        }
-        
-        h1, h2, h3, h4, h5 {
-            font-weight: 800;
-            margin-bottom: 1rem;
-            letter-spacing: -0.5px;
-        }
-        
-        h1 {
-            font-weight: 900;
-        }
-        
-        .container {
-            width: 100%;
-            max-width: 1400px;
-            margin: 0 auto;
-            padding: 0 20px;
-        }
-        
-        /* Fixed Navigation Bar */
-        .navbar-container {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            background: rgba(26, 26, 26, 0.95);
-            z-index: 1000;
-            box-shadow: 0 2px 15px rgba(0,0,0,0.2);
-            transition: var(--transition);
-        }
-        
-        .navbar-container.scrolled {
-            background: rgba(26, 26, 26, 0.98);
-            padding: 10px 0;
-        }
-        
-        .navbar {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 1.5rem 0;
-            transition: var(--transition);
-        }
-        
-        .navbar-container.scrolled .navbar {
-            padding: 0.5rem 0;
-        }
-        
-        .logo {
-            font-size: 2.2rem;
-            font-weight: 900;
-            color: white;
-            text-decoration: none;
-        }
-        
-        .logo span {
-            color: var(--primary);
-        }
-        
-        .nav-links {
-            display: flex;
-            list-style: none;
-            gap: 1.8rem;
-        }
-        
-        .nav-links a {
-            color: white;
-            text-decoration: none;
-            text-transform: uppercase;
-            font-weight: 600;
-            font-size: 0.9rem;
-            letter-spacing: 1px;
-            transition: var(--transition);
-            position: relative;
-            padding: 8px 0;
-        }
-        
-        .nav-links a:hover {
-            color: var(--accent);
-        }
-        
-        .nav-links a:after {
-            content: '';
-            position: absolute;
-            width: 0;
-            height: 2px;
-            bottom: 0;
-            left: 0;
-            background-color: var(--primary);
-            transition: var(--transition);
-        }
-        
-        .nav-links a:hover:after {
-            width: 100%;
-        }
-        
-        .nav-links a.active {
-            color: var(--accent);
-        }
-        
-        .nav-links a.active:after {
-            width: 100%;
-        }
-        
-        .mobile-menu-btn {
-            display: none;
-            background: none;
-            border: none;
-            color: white;
-            font-size: 1.5rem;
-            cursor: pointer;
-        }
-        
-        /* Used Bikes Hero */
-        .used-bikes-hero {
-            background: linear-gradient(to bottom, rgba(0,0,0,0.7), rgba(0,0,0,0.8)), url('./assets/tvs\ 160.avif');
-            background-size: cover;
-            background-position: center;
-            color: white;
-            padding: 8rem 0 5rem;
-            text-align: center;
-            min-height: 100vh;
-        }
-        
-        .used-bikes-hero h1 {
-            font-size: 4rem;
-            margin-bottom: 1.5rem;
-            text-transform: uppercase;
-            letter-spacing: 3px;
-        }
-        
-        .used-bikes-hero p {
-            font-size: 1.3rem;
-            max-width: 700px;
-            margin: 0 auto 2rem;
-            opacity: 0.9;
-            font-weight: 500;
-        }
-        
-        .btn {
-            display: inline-block;
-            padding: 14px 35px;
-            background: var(--primary);
-            color: white;
-            text-decoration: none;
-            border-radius: 4px;
-            text-transform: uppercase;
-            font-weight: 700;
-            letter-spacing: 1px;
-            transition: var(--transition);
-            border: none;
-            cursor: pointer;
-            font-size: 0.95rem;
-            font-family: 'Montserrat', sans-serif;
-        }
-        
-        .btn:hover {
-            background: #c4171d;
-            transform: translateY(-3px);
-            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
-        }
-        
-        .btn-outline {
-            background: transparent;
-            border: 2px solid white;
-            margin-left: 1rem;
-        }
-        
-        .btn-outline:hover {
-            background: white;
-            color: var(--primary);
-        }
-        
-        /* Filter Section */
-        .filter-section {
-            background: white;
-            padding: 2.5rem 0;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
-        }
-        
-        .filter-container {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 1.5rem;
-            justify-content: center;
-        }
-        
-        .filter-group {
-            display: flex;
-            flex-direction: column;
-            min-width: 200px;
-        }
-        
-        .filter-group label {
-            font-weight: 600;
-            margin-bottom: 0.5rem;
-            color: var(--secondary);
-        }
-        
-        .filter-group select, .filter-group input {
-            padding: 12px 15px;
-            border: 1px solid #ddd;
-            border-radius: 4px;
-            font-family: 'Montserrat', sans-serif;
-            font-size: 1rem;
-        }
-        
-        .filter-group .price-range {
-            display: flex;
-            align-items: center;
-            gap: 0.5rem;
-        }
-        
-        .filter-group .price-range input {
-            width: 100px;
-        }
-        
-        /* Bike Showcase */
-        .bike-showcase {
-            padding: 5rem 0;
-            background-color: #f8f9fa;
-        }
-        
-        .section-title {
-            text-align: center;
-            margin-bottom: 3rem;
-        }
-        
-        .section-title h2 {
-            font-size: 2.8rem;
-            color: var(--secondary);
-            position: relative;
-            display: inline-block;
-            padding-bottom: 1rem;
-        }
-        
-        .section-title h2:after {
-            content: '';
-            position: absolute;
-            width: 80px;
-            height: 4px;
-            background: var(--primary);
-            bottom: 0;
-            left: 50%;
-            transform: translateX(-50%);
-        }
-        
-        .section-title p {
-            font-size: 1.1rem;
-            color: var(--gray);
-            max-width: 700px;
-            margin: 0.5rem auto 0;
-            font-weight: 500;
-        }
-        
-        .bikes-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
-            gap: 2.5rem;
-        }
-        
-        .bike-card {
-            background: white;
-            border-radius: 8px;
-            overflow: hidden;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
-            transition: var(--transition);
-            position: relative;
-        }
-        
-        .bike-card:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 15px 30px rgba(0,0,0,0.1);
-        }
-        
-        .bike-badge {
-            position: absolute;
-            top: 15px;
-            right: 15px;
-            background: var(--primary);
-            color: white;
-            padding: 5px 15px;
-            border-radius: 20px;
-            font-weight: 600;
-            font-size: 0.85rem;
-            z-index: 2;
-        }
-        
-        .bike-image {
-            height: 220px;
-            overflow: hidden;
-            position: relative;
-        }
-        
-        .bike-image img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            transition: var(--transition);
-        }
-        
-        .bike-card:hover .bike-image img {
-            transform: scale(1.1);
-        }
-        
-        .bike-info {
-            padding: 1.5rem;
-        }
-        
-        .bike-make {
-            color: var(--primary);
-            font-size: 0.85rem;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            margin-bottom: 0.5rem;
-            font-weight: 600;
-        }
-        
-        .bike-name {
-            font-size: 1.5rem;
-            margin-bottom: 0.5rem;
-            font-weight: 700;
-            color: var(--secondary);
-        }
-        
-        .bike-price {
-            font-weight: 800;
-            font-size: 1.6rem;
-            color: var(--secondary);
-            margin-bottom: 1rem;
-        }
-        
-        .bike-details {
-            display: flex;
-            justify-content: space-between;
-            margin-bottom: 1rem;
-            padding-bottom: 1rem;
-            border-bottom: 1px solid #eee;
-        }
-        
-        .detail-item {
-            text-align: center;
-        }
-        
-        .detail-value {
-            font-weight: 700;
-            font-size: 1.1rem;
-        }
-        
-        .detail-label {
-            font-size: 0.85rem;
-            color: var(--gray);
-        }
-        
-        .bike-description {
-            margin-bottom: 1.5rem;
-            font-weight: 500;
-        }
-        
-        .bike-meta {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-        
-        /* Budget Brands */
-        .budget-brands {
-            padding: 4rem 0;
-            background: white;
-        }
-        
-        .brands-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-            gap: 2rem;
-            align-items: center;
-            margin-top: 2rem;
-        }
-        
-        .brand-item {
-            text-align: center;
-            opacity: 0.7;
-            transition: var(--transition);
-        }
-        
-        .brand-item:hover {
-            opacity: 1;
-            transform: scale(1.05);
-        }
-        
-        .brand-item img {
-            max-width: 100%;
-            height: auto;
-            filter: grayscale(100%);
-            transition: var(--transition);
-        }
-        
-        .brand-item:hover img {
-            filter: grayscale(0);
-        }
-        
-        /* Special Offers */
-        .special-offers {
-            padding: 5rem 0;
-            background: linear-gradient(to bottom, var(--secondary), var(--dark));
-            color: white;
-        }
-        
-        .offers-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-            gap: 2rem;
-        }
-        
-        .offer-card {
-            background: rgba(255,255,255,0.05);
-            border-radius: 8px;
-            padding: 2rem;
-            transition: var(--transition);
-            backdrop-filter: blur(10px);
-            display: flex;
-            flex-direction: column;
-            height: 100%;
-        }
-        
-        .offer-card:hover {
-            transform: translateY(-10px);
-            background: rgba(255,255,255,0.1);
-        }
-        
-        .offer-badge {
-            background: var(--accent);
-            color: var(--secondary);
-            padding: 5px 15px;
-            border-radius: 20px;
-            font-weight: 700;
-            display: inline-block;
-            margin-bottom: 1.5rem;
-            align-self: flex-start;
-        }
-        
-        .offer-card h3 {
-            font-size: 1.7rem;
-            margin-bottom: 1rem;
-        }
-        
-        .offer-details {
-            margin-top: auto;
-            padding-top: 1.5rem;
-        }
-        
-        .offer-price {
-            font-size: 1.8rem;
-            font-weight: 800;
-            color: var(--accent);
-            margin-bottom: 1rem;
-        }
-        
-        /* Testimonials */
-        .testimonials {
-            padding: 5rem 0;
-            background: #f8f9fa;
-        }
-        
-        .testimonial-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-            gap: 2rem;
-        }
-        
-        .testimonial-card {
-            background: white;
-            padding: 2.5rem;
-            border-radius: 8px;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
-            position: relative;
-        }
-        
-        .testimonial-card:before {
-            content: '"';
-            position: absolute;
-            top: 20px;
-            left: 20px;
-            font-size: 5rem;
-            color: rgba(228, 30, 37, 0.1);
-            font-family: serif;
-            line-height: 1;
-        }
-        
-        .testimonial-content {
-            margin-bottom: 1.5rem;
-            font-style: italic;
-            font-weight: 500;
-            position: relative;
-            z-index: 2;
-        }
-        
-        .testimonial-author {
-            display: flex;
-            align-items: center;
-            gap: 1rem;
-        }
-        
-        .author-avatar {
-            width: 60px;
-            height: 60px;
-            border-radius: 50%;
-            overflow: hidden;
-        }
-        
-        .author-avatar img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
-        
-        .author-info h4 {
-            margin-bottom: 0.2rem;
-            font-size: 1.1rem;
-        }
-        
-        .author-info p {
-            color: var(--gray);
-            font-weight: 500;
-        }
-        
-        /* Newsletter */
-        .newsletter {
-            padding: 4rem 0;
-            background: var(--primary);
-            color: white;
-            text-align: center;
-        }
-        
-        .newsletter h2 {
-            font-size: 2.5rem;
-            margin-bottom: 1rem;
-        }
-        
-        .newsletter p {
-            max-width: 600px;
-            margin: 0 auto 2rem;
-            font-weight: 500;
-            font-size: 1.1rem;
-        }
-        
-        .newsletter-form {
-            max-width: 600px;
-            margin: 0 auto;
-            display: flex;
-            gap: 1rem;
-        }
-        
-        .newsletter-form input {
-            flex: 1;
-            padding: 15px 20px;
-            border: none;
-            border-radius: 4px;
-            font-family: 'Montserrat', sans-serif;
-            font-size: 1rem;
-        }
-        
-        /* Footer */
-        footer {
-            background: var(--secondary);
-            color: rgba(255,255,255,0.7);
-            padding: 4rem 0 0;
-        }
-        
-        .footer-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 3rem;
-            margin-bottom: 3rem;
-        }
-        
-        .footer-col h4 {
-            color: white;
-            margin-bottom: 1.5rem;
-            font-size: 1.3rem;
-            position: relative;
-            padding-bottom: 0.5rem;
-            font-weight: 700;
-        }
-        
-        .footer-col h4:after {
-            content: '';
-            position: absolute;
-            width: 40px;
-            height: 3px;
-            background: var(--primary);
-            bottom: 0;
-            left: 0;
-        }
-        
-        .footer-col ul {
-            list-style: none;
-        }
-        
-        .footer-col ul li {
-            margin-bottom: 0.8rem;
-        }
-        
-        .footer-col ul li a {
-            color: rgba(255,255,255,0.7);
-            text-decoration: none;
-            transition: var(--transition);
-            font-weight: 500;
-            display: block;
-        }
-        
-        .footer-col ul li a:hover {
-            color: var(--primary);
-            padding-left: 5px;
-        }
-        
-        .footer-bottom {
-            text-align: center;
-            padding: 1.5rem 0;
-            border-top: 1px solid rgba(255,255,255,0.1);
-            font-size: 0.9rem;
-            font-weight: 500;
-        }
-             .social-links {
-            display: flex;
-            gap: 1rem;
-        }
-        
-        .social-links a {
-            color: white;
-            transition: var(--transition);
-        }
-        
-        .social-links a:hover {
-            color: var(--accent);
-        }
-        /* Responsive */
-        @media (max-width: 1200px) {
-            .used-bikes-hero h1 {
-                font-size: 3.5rem;
-            }
-        }
-        
-        @media (max-width: 992px) {
-            .used-bikes-hero h1 {
-                font-size: 3rem;
-            }
-            
-            .filter-container {
-                flex-direction: column;
-                align-items: center;
-            }
-            
-            .filter-group {
-                width: 100%;
-                max-width: 400px;
-            }
-            
-            .nav-links {
-                gap: 1.2rem;
-            }
-        }
-        
-        @media (max-width: 768px) {
-            .navbar {
-                padding: 1rem 0;
-            }
-            
-            .nav-links {
-                display: none;
-                position: absolute;
-                top: 100%;
-                left: 0;
-                width: 100%;
-                background: var(--secondary);
-                flex-direction: column;
-                padding: 1.5rem 0;
-                gap: 1rem;
-                box-shadow: 0 10px 15px rgba(0,0,0,0.2);
-            }
-            
-            .nav-links.active {
-                display: flex;
-            }
-            
-            .mobile-menu-btn {
-                display: block;
-            }
-            
-            .used-bikes-hero h1 {
-                font-size: 2.5rem;
-            }
-            
-            .used-bikes-hero p {
-                font-size: 1.1rem;
-            }
-            
-            .section-title h2 {
-                font-size: 2.3rem;
-            }
-            
-            .bike-card {
-                max-width: 400px;
-                margin: 0 auto;
-            }
-            
-            .newsletter-form {
-                flex-direction: column;
-            }
-        }
-        
-        @media (max-width: 576px) {
-            .used-bikes-hero h1 {
-                font-size: 2.2rem;
-            }
-            
-            .section-title h2 {
-                font-size: 2rem;
-            }
-            
-            .bike-details {
-                flex-direction: column;
-                gap: 1rem;
-            }
-        }
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    color: var(--dark);
+    background-color: #f0f2f5;
+    line-height: 1.6;
+    overflow-x: hidden;
+    font-weight: 400;
+    padding-top: 100px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-weight: 800;
+    margin-bottom: 1rem;
+    letter-spacing: -0.5px;
+}
+
+h1 {
+    font-weight: 900;
+}
+
+.container {
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Fixed Navigation Bar */
+.navbar-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(26, 26, 26, 0.95);
+    z-index: 1000;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.2);
+    transition: var(--transition);
+}
+
+.navbar-container.scrolled {
+    background: rgba(26, 26, 26, 0.98);
+    padding: 10px 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 0;
+    transition: var(--transition);
+}
+
+.navbar-container.scrolled .navbar {
+    padding: 0.5rem 0;
+}
+
+.logo {
+    font-size: 2.2rem;
+    font-weight: 900;
+    color: white;
+    text-decoration: none;
+}
+
+.logo span {
+    color: var(--primary);
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 1.8rem;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+    transition: var(--transition);
+    position: relative;
+    padding: 8px 0;
+}
+
+.nav-links a:hover {
+    color: var(--accent);
+}
+
+.nav-links a:after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: var(--primary);
+    transition: var(--transition);
+}
+
+.nav-links a:hover:after {
+    width: 100%;
+}
+
+.nav-links a.active {
+    color: var(--accent);
+}
+
+.nav-links a.active:after {
+    width: 100%;
+}
+
+.mobile-menu-btn {
+    display: none;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+/* Used Bikes Hero */
+.used-bikes-hero {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.8)), url('./assets/tvs\ 160.avif');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 8rem 0 5rem;
+    text-align: center;
+    min-height: 100vh;
+    margin-top: -15px;
+}
+
+.used-bikes-hero h1 {
+    font-size: 4rem;
+    margin-bottom: 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+.used-bikes-hero p {
+    font-size: 1.3rem;
+    max-width: 700px;
+    margin: 0 auto 2rem;
+    opacity: 0.9;
+    font-weight: 500;
+}
+
+.btn {
+    display: inline-block;
+    padding: 14px 35px;
+    background: var(--primary);
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 1px;
+    transition: var(--transition);
+    border: none;
+    cursor: pointer;
+    font-size: 0.95rem;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.btn:hover {
+    background: #c4171d;
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.btn-outline {
+    background: transparent;
+    border: 2px solid white;
+    margin-left: 1rem;
+}
+
+.btn-outline:hover {
+    background: white;
+    color: var(--primary);
+}
+
+/* Filter Section */
+.filter-section {
+    background: white;
+    padding: 2.5rem 0;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.filter-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: center;
+}
+
+.filter-group {
+    display: flex;
+    flex-direction: column;
+    min-width: 200px;
+}
+
+.filter-group label {
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    color: var(--secondary);
+}
+
+.filter-group select,
+.filter-group input {
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+}
+
+.filter-group .price-range {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.filter-group .price-range input {
+    width: 100px;
+}
+
+/* Bike Showcase */
+.bike-showcase {
+    padding: 5rem 0;
+    background-color: #f8f9fa;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.section-title h2 {
+    font-size: 2.8rem;
+    color: var(--secondary);
+    position: relative;
+    display: inline-block;
+    padding-bottom: 1rem;
+}
+
+.section-title h2:after {
+    content: '';
+    position: absolute;
+    width: 80px;
+    height: 4px;
+    background: var(--primary);
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.section-title p {
+    font-size: 1.1rem;
+    color: var(--gray);
+    max-width: 700px;
+    margin: 0.5rem auto 0;
+    font-weight: 500;
+}
+
+.bikes-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 2.5rem;
+}
+
+.bike-card {
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    transition: var(--transition);
+    position: relative;
+}
+
+.bike-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+.bike-badge {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: var(--primary);
+    color: white;
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-weight: 600;
+    font-size: 0.85rem;
+    z-index: 2;
+}
+
+.bike-image {
+    height: 220px;
+    overflow: hidden;
+    position: relative;
+}
+
+.bike-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: var(--transition);
+}
+
+.bike-card:hover .bike-image img {
+    transform: scale(1.1);
+}
+
+.bike-info {
+    padding: 1.5rem;
+}
+
+.bike-make {
+    color: var(--primary);
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+}
+
+.bike-name {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    font-weight: 700;
+    color: var(--secondary);
+}
+
+.bike-price {
+    font-weight: 800;
+    font-size: 1.6rem;
+    color: var(--secondary);
+    margin-bottom: 1rem;
+}
+
+.bike-details {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #eee;
+}
+
+.detail-item {
+    text-align: center;
+}
+
+.detail-value {
+    font-weight: 700;
+    font-size: 1.1rem;
+}
+
+.detail-label {
+    font-size: 0.85rem;
+    color: var(--gray);
+}
+
+.bike-description {
+    margin-bottom: 1.5rem;
+    font-weight: 500;
+}
+
+.bike-meta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Budget Brands */
+.budget-brands {
+    padding: 4rem 0;
+    background: white;
+}
+
+.brands-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 2rem;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.brand-item {
+    text-align: center;
+    opacity: 0.7;
+    transition: var(--transition);
+}
+
+.brand-item:hover {
+    opacity: 1;
+    transform: scale(1.05);
+}
+
+.brand-item img {
+    max-width: 100%;
+    height: auto;
+    filter: grayscale(100%);
+    transition: var(--transition);
+}
+
+.brand-item:hover img {
+    filter: grayscale(0);
+}
+
+/* Special Offers */
+.special-offers {
+    padding: 5rem 0;
+    background: linear-gradient(to bottom, var(--secondary), var(--dark));
+    color: white;
+}
+
+.offers-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 2rem;
+}
+
+.offer-card {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 8px;
+    padding: 2rem;
+    transition: var(--transition);
+    backdrop-filter: blur(10px);
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.offer-card:hover {
+    transform: translateY(-10px);
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.offer-badge {
+    background: var(--accent);
+    color: var(--secondary);
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-weight: 700;
+    display: inline-block;
+    margin-bottom: 1.5rem;
+    align-self: flex-start;
+}
+
+.offer-card h3 {
+    font-size: 1.7rem;
+    margin-bottom: 1rem;
+}
+
+.offer-details {
+    margin-top: auto;
+    padding-top: 1.5rem;
+}
+
+.offer-price {
+    font-size: 1.8rem;
+    font-weight: 800;
+    color: var(--accent);
+    margin-bottom: 1rem;
+}
+
+/* Testimonials */
+.testimonials {
+    padding: 5rem 0;
+    background: #f8f9fa;
+}
+
+.testimonial-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 2rem;
+}
+
+.testimonial-card {
+    background: white;
+    padding: 2.5rem;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    position: relative;
+}
+
+.testimonial-card:before {
+    content: '"';
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 5rem;
+    color: rgba(228, 30, 37, 0.1);
+    font-family: serif;
+    line-height: 1;
+}
+
+.testimonial-content {
+    margin-bottom: 1.5rem;
+    font-style: italic;
+    font-weight: 500;
+    position: relative;
+    z-index: 2;
+}
+
+.testimonial-author {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.author-avatar {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.author-avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.author-info h4 {
+    margin-bottom: 0.2rem;
+    font-size: 1.1rem;
+}
+
+.author-info p {
+    color: var(--gray);
+    font-weight: 500;
+}
+
+/* Newsletter */
+.newsletter {
+    padding: 4rem 0;
+    background: var(--primary);
+    color: white;
+    text-align: center;
+}
+
+.newsletter h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.newsletter p {
+    max-width: 600px;
+    margin: 0 auto 2rem;
+    font-weight: 500;
+    font-size: 1.1rem;
+}
+
+.newsletter-form {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    gap: 1rem;
+}
+
+.newsletter-form input {
+    flex: 1;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 4px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+}
+
+/* Footer */
+footer {
+    background: var(--secondary);
+    color: rgba(255, 255, 255, 0.7);
+    padding: 4rem 0 0;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 3rem;
+    margin-bottom: 3rem;
+}
+
+.footer-col h4 {
+    color: white;
+    margin-bottom: 1.5rem;
+    font-size: 1.3rem;
+    position: relative;
+    padding-bottom: 0.5rem;
+    font-weight: 700;
+}
+
+.footer-col h4:after {
+    content: '';
+    position: absolute;
+    width: 40px;
+    height: 3px;
+    background: var(--primary);
+    bottom: 0;
+    left: 0;
+}
+
+.footer-col ul {
+    list-style: none;
+}
+
+.footer-col ul li {
+    margin-bottom: 0.8rem;
+}
+
+.footer-col ul li a {
+    color: rgba(255, 255, 255, 0.7);
+    text-decoration: none;
+    transition: var(--transition);
+    font-weight: 500;
+    display: block;
+}
+
+.footer-col ul li a:hover {
+    color: var(--primary);
+    padding-left: 5px;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding: 1.5rem 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.social-links {
+    display: flex;
+    gap: 1rem;
+}
+
+.social-links a {
+    color: white;
+    transition: var(--transition);
+}
+
+.social-links a:hover {
+    color: var(--accent);
+}
+
+/* Responsive */
+@media (max-width: 1200px) {
+    .used-bikes-hero h1 {
+        font-size: 3.5rem;
+    }
+}
+
+@media (max-width: 992px) {
+    .used-bikes-hero h1 {
+        font-size: 3rem;
+    }
+
+    .filter-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .filter-group {
+        width: 100%;
+        max-width: 400px;
+    }
+
+    .nav-links {
+        gap: 1.2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        padding: 1rem 0;
+    }
+
+    .nav-links {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background: var(--secondary);
+        flex-direction: column;
+        padding: 1.5rem 0;
+        gap: 1rem;
+        box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    .nav-links.active {
+        display: flex;
+        padding: 20px;
+    }
+
+    .mobile-menu-btn {
+        display: block;
+    }
+
+    .used-bikes-hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .used-bikes-hero p {
+        font-size: 1.1rem;
+    }
+
+    .section-title h2 {
+        font-size: 2.3rem;
+    }
+
+    .bike-card {
+        max-width: 400px;
+        margin: 0 auto;
+    }
+
+    .newsletter-form {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 576px) {
+    .used-bikes-hero h1 {
+        font-size: 2.2rem;
+    }
+
+    .section-title h2 {
+        font-size: 2rem;
+    }
+
+    .bike-details {
+        flex-direction: column;
+        gap: 1rem;
+    }
+}

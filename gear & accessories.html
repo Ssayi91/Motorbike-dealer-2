@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gear & Accessories - MotorBike World</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./gear.css">
+</head>
+<body>
+    <!-- Fixed Navigation Bar -->
+    <div class="navbar-container" id="navbar">
+        <div class="container">
+            <nav class="navbar">
+                <a href="#" class="logo">MOTO<span>BIKE</span> WORLD</a>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="new bikes.html">New Bikes</a></li>
+                    <li><a href="used bikes.html">Used Bikes</a></li>
+                    <li><a href="gear & accessories.html" class="active">Gear & Accessories</a></li>
+                    <li><a href="#">Parts</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+                <button class="mobile-menu-btn">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </nav>
+        </div>
+    </div>
+    
+    <!-- Gear Hero -->
+    <section class="gear-hero">
+        <div class="container">
+            <h1>Premium Riding Gear & Accessories</h1>
+            <p>Discover top-quality motorcycle gear for safety, comfort, and style. Everything you need for the perfect ride.</p>
+            <div class="hero-buttons">
+                <a href="#gear" class="btn">Shop Now</a>
+                <a href="#offers" class="btn btn-outline">Special Offers</a>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Gear Categories -->
+    <section class="gear-categories">
+        <div class="container">
+            <div class="section-title">
+                <h2>Rider Essentials</h2>
+                <p>Find the perfect gear for every aspect of your ride</p>
+            </div>
+            
+            <div class="categories-grid">
+                <div class="category-card">
+                    <div class="category-image">
+                        <img src="./assets/helmet 2.webp" alt="Helmets">
+                    </div>
+                    <div class="category-info">
+                        <h3>Helmets</h3>
+                        <p>Full face, modular, open face & dual-sport helmets from top brands.</p>
+                        <a href="#" class="btn">Browse Helmets</a>
+                    </div>
+                </div>
+                
+                <div class="category-card">
+                    <div class="category-image">
+                        <img src="./assets/riding jacket.jpg" alt="Jackets">
+                    </div>
+                    <div class="category-info">
+                        <h3>Riding Jackets</h3>
+                        <p>Leather, textile & mesh jackets with CE-approved armor protection.</p>
+                        <a href="#" class="btn">Browse Jackets</a>
+                    </div>
+                </div>
+                
+                <div class="category-card">
+                    <div class="category-image">
+                        <img src="./assets/gloves.jpeg" alt="Gloves">
+                    </div>
+                    <div class="category-info">
+                        <h3>Gloves</h3>
+                        <p>Summer, winter, touring & racing gloves for ultimate hand protection.</p>
+                        <a href="#" class="btn">Browse Gloves</a>
+                    </div>
+                </div>
+                
+                <div class="category-card">
+                    <div class="category-image">
+                        <img src="./assets/boots n knee.jpg" alt="Boots">
+                    </div>
+                    <div class="category-info">
+                        <h3>Riding Boots</h3>
+                        <p>Durable boots with ankle protection for all riding conditions.</p>
+                        <a href="#" class="btn">Browse Boots</a>
+                    </div>
+                </div>
+                
+                <div class="category-card">
+                    <div class="category-image">
+                        <img src="./assets/mounts.jpg" alt="Accessories">
+                    </div>
+                    <div class="category-info">
+                        <h3>Accessories</h3>
+                        <p>Communication systems, luggage, phone mounts & more.</p>
+                        <a href="#" class="btn">Browse Accessories</a>
+                    </div>
+                </div>
+                
+                <div class="category-card">
+                    <div class="category-image">
+                        <img src="./assets/armor.jpg" alt="Protection">
+                    </div>
+                    <div class="category-info">
+                        <h3>Protection Gear</h3>
+                        <p>Armor, back protectors & impact shorts for extra safety.</p>
+                        <a href="#" class="btn">Browse Protection</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Gear Showcase -->
+    <section class="gear-showcase" id="gear">
+        <div class="container">
+            <div class="section-title">
+                <h2>Featured Gear & Accessories</h2>
+                <p>Quality products for the discerning rider</p>
+            </div>
+            
+            <!-- Filter Section -->
+            <div class="filter-section">
+                <div class="filter-container">
+                    <div class="filter-group">
+                        <label for="gear-category">Category</label>
+                        <select id="gear-category">
+                            <option value="all">All Categories</option>
+                            <option value="helmets">Helmets</option>
+                            <option value="jackets">Jackets</option>
+                            <option value="gloves">Gloves</option>
+                            <option value="boots">Boots</option>
+                            <option value="protection">Protection</option>
+                            <option value="accessories">Accessories</option>
+                        </select>
+                    </div>
+                    
+                    <div class="filter-group">
+                        <label for="gear-brand">Brand</label>
+                        <select id="gear-brand">
+                            <option value="all">All Brands</option>
+                            <option value="shoei">Shoei</option>
+                            <option value="agv">AGV</option>
+                            <option value="alpinestars">Alpinestars</option>
+                            <option value="dainese">Dainese</option>
+                            <option value="revit">REV'IT!</option>
+                            <option value="sena">Sena</option>
+                        </select>
+                    </div>
+                    
+                    <div class="filter-group">
+                        <label for="price">Price Range</label>
+                        <div class="price-range">
+                            <input type="number" placeholder="Min" id="min-price" value="2000">
+                            <span>-</span>
+                            <input type="number" placeholder="Max" id="max-price" value="50000">
+                        </div>
+                    </div>
+                    
+                    <div class="filter-group">
+                        <label for="size">Size</label>
+                        <select id="size">
+                            <option value="all">All Sizes</option>
+                            <option value="s">S</option>
+                            <option value="m">M</option>
+                            <option value="l">L</option>
+                            <option value="xl">XL</option>
+                            <option value="xxl">XXL</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="gear-grid">
+                <div class="gear-card">
+                    <div class="gear-badge">Best Seller</div>
+                    <div class="gear-image">
+                        <img src="./assets/shei rf.jpg" alt="Shoei Helmet">
+                    </div>
+                    <div class="gear-info">
+                        <div class="gear-brand">Shoei</div>
+                        <h3 class="gear-name">RF-1400 Helmet</h3>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                            <span>(42)</span>
+                        </div>
+                        <div class="gear-price">Ksh 35,000</div>
+                        
+                        <div class="gear-description">
+                            Premium full-face helmet with advanced aerodynamics and ventilation system.
+                        </div>
+                        
+                        <div class="gear-meta">
+                            <a href="#" class="btn">View Details</a>
+                            <a href="#" class="btn btn-outline" style="border-color: var(--primary); color: var(--primary);">Add to Cart</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="gear-card">
+                    <div class="gear-badge">New</div>
+                    <div class="gear-image">
+                        <img src="./assets/alpine jacket.jpeg" alt="Alpinestars Jacket">
+                    </div>
+                    <div class="gear-info">
+                        <div class="gear-brand">Alpinestars</div>
+                        <h3 class="gear-name">T-GP Plus R V3 Jacket</h3>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <span>(28)</span>
+                        </div>
+                        <div class="gear-price">Ksh 22,500</div>
+                        
+                        <div class="gear-description">
+                            Perforated leather jacket with CE Level 2 armor and removable thermal liner.
+                        </div>
+                        
+                        <div class="gear-meta">
+                            <a href="#" class="btn">View Details</a>
+                            <a href="#" class="btn btn-outline" style="border-color: var(--primary); color: var(--primary);">Add to Cart</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="gear-card">
+                    <div class="gear-badge">Hot Deal</div>
+                    <div class="gear-image">
+                        <img src="./assets/dainese.webp" alt="Dainese Gloves">
+                    </div>
+                    <div class="gear-info">
+                        <div class="gear-brand">Dainese</div>
+                        <h3 class="gear-name">4-Stroke Evo Gloves</h3>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <span>(65)</span>
+                        </div>
+                        <div class="gear-price">Ksh 12,800</div>
+                        
+                        <div class="gear-description">
+                            High-performance gloves with kangaroo leather palm and carbon fiber protection.
+                        </div>
+                        
+                        <div class="gear-meta">
+                            <a href="#" class="btn">View Details</a>
+                            <a href="#" class="btn btn-outline" style="border-color: var(--primary); color: var(--primary);">Add to Cart</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="gear-card">
+                    <div class="gear-badge">Top Rated</div>
+                    <div class="gear-image">
+                        <img src="./assets/sena bt.webp" alt="Sena Headset">
+                    </div>
+                    <div class="gear-info">
+                        <div class="gear-brand">Sena</div>
+                        <h3 class="gear-name">50S Bluetooth Headset</h3>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                            <span>(87)</span>
+                        </div>
+                        <div class="gear-price">Ksh 18,900</div>
+                        
+                        <div class="gear-description">
+                            Premium motorcycle communication system with 8-way conferencing and HD speakers.
+                        </div>
+                        
+                        <div class="gear-meta">
+                            <a href="#" class="btn">View Details</a>
+                            <a href="#" class="btn btn-outline" style="border-color: var(--primary); color: var(--primary);">Add to Cart</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="gear-card">
+                    <div class="gear-badge">Sale</div>
+                    <div class="gear-image">
+                        <img src="./assets/TCX-Hero-2-Boot-Review-5.jpg" alt="TCX Boots">
+                    </div>
+                    <div class="gear-info">
+                        <div class="gear-brand">TCX</div>
+                        <h3 class="gear-name">Hero WP Boots</h3>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <span>(34)</span>
+                        </div>
+                        <div class="gear-price">Ksh 16,500</div>
+                        
+                        <div class="gear-description">
+                            Waterproof touring boots with ankle protection and comfortable walking soles.
+                        </div>
+                        
+                        <div class="gear-meta">
+                            <a href="#" class="btn">View Details</a>
+                            <a href="#" class="btn btn-outline" style="border-color: var(--primary); color: var(--primary);">Add to Cart</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="gear-card">
+                    <div class="gear-badge">Limited Stock</div>
+                    <div class="gear-image">
+                        <img src="./assets/quad lock.jpg" alt="Quad Lock">
+                    </div>
+                    <div class="gear-info">
+                        <div class="gear-brand">Quad Lock</div>
+                        <h3 class="gear-name">Vibration Dampener Pro</h3>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <span>(92)</span>
+                        </div>
+                        <div class="gear-price">Ksh 4,200</div>
+                        
+                        <div class="gear-description">
+                            Advanced vibration dampener with patented technology to protect your phone's camera.
+                        </div>
+                        
+                        <div class="gear-meta">
+                            <a href="#" class="btn">View Details</a>
+                            <a href="#" class="btn btn-outline" style="border-color: var(--primary); color: var(--primary);">Add to Cart</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Gear Brands -->
+    <section class="gear-brands">
+        <div class="container">
+            <div class="section-title">
+                <h2>Premium Gear Brands</h2>
+                <p>Trusted by riders around the world</p>
+            </div>
+            
+            <div class="brands-grid">
+                <div class="brand-item">
+                    <img src="./assets/shoie.png" alt="Shoei">
+                </div>
+                <div class="brand-item">
+                    <img src="./assets/avg.png" alt="AGV">
+                </div>
+                <div class="brand-item">
+                    <img src="./assets/alpinestars.svg" alt="Alpinestars">
+                </div>
+                <div class="brand-item ">
+                    <img src="./assets/Dainese_logo_wordmark.png" alt="Dainese">
+                </div>
+                <div class="brand-item">
+                    <img src="./assets/REVIT-Logo-Black-Portrait-1.webp" alt="REV'IT!">
+                </div>
+                <div class="brand-item">
+                    <img src="./assets/sena.png" alt="Sena">
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Gear Offers -->
+    <section class="gear-offers" id="offers">
+        <div class="container">
+            <div class="section-title">
+                <h2>Special Gear Offers</h2>
+                <p>Great deals on premium riding equipment</p>
+            </div>
+            
+            <div class="offers-grid">
+                <div class="offer-card">
+                    <div class="offer-badge">Helmet Sale</div>
+                    <h3>Helmet Clearance</h3>
+                    <p>Save up to 30% on last season's premium helmets from top brands. Limited sizes available.</p>
+                    
+                    <div class="offer-details">
+                        <div class="offer-price">Up to 30% Off</div>
+                        <p>Shoei, AGV, HJC models</p>
+                        <a href="#" class="btn" style="margin-top: 1rem;">Shop Helmets</a>
+                    </div>
+                </div>
+                
+                <div class="offer-card">
+                    <div class="offer-badge">Bundle Deal</div>
+                    <h3>Rider Essentials Kit</h3>
+                    <p>Get a complete set of riding gear - jacket, gloves, and boots at a special bundle price.</p>
+                    
+                    <div class="offer-details">
+                        <div class="offer-price">Save Ksh 8,000</div>
+                        <p>Limited time offer</p>
+                        <a href="#" class="btn" style="margin-top: 1rem;">View Bundle</a>
+                    </div>
+                </div>
+                
+                <div class="offer-card">
+                    <div class="offer-badge">Free Shipping</div>
+                    <h3>Orders Over Ksh 15,000</h3>
+                    <p>Free shipping nationwide on all gear orders over Ksh 15,000. Valid until end of month.</p>
+                    
+                    <div class="offer-details">
+                        <div class="offer-price">Free Delivery</div>
+                        <p>Nationwide coverage</p>
+                        <a href="#" class="btn" style="margin-top: 1rem;">Shop Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Testimonials Section -->
+    <!-- <section class="testimonials">
+        <div class="container">
+            <div class="section-title">
+                <h2>Rider Experiences</h2>
+                <p>What our customers say about our gear and accessories</p>
+            </div>
+            
+            <div class="testimonial-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        "The Shoei helmet I bought from MotorBike World saved my life in a recent accident. The quality and protection are outstanding. I'll never ride without premium gear again!"
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">
+                            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=100&q=80" alt="James Kariuki">
+                        </div>
+                        <div class="author-info">
+                            <h4>John Kamau</h4>
+                            <p>Shoei RF-1400 Owner</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        "I've been using the Alpinestars jacket for my daily commute and weekend rides. The ventilation is perfect for our climate and the protection gives me peace of mind."
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">
+                            <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=100&q=80" alt="Sarah Mwangi">
+                        </div>
+                        <div class="author-info">
+                            <h4>Mary Wanjiru</h4>
+                            <p>Alpinestars Jacket Owner</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        "The Sena communication system has transformed our group rides. Crystal clear communication even at highway speeds. Easy to install and the battery lasts all day."
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">
+                            <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&w=100&q=80" alt="David Omondi">
+                        </div>
+                        <div class="author-info">
+                            <h4>David Otieno</h4>
+                            <p>Sena 50S User</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+    
+    <!-- Newsletter Section -->
+    <section class="newsletter">
+        <div class="container">
+            <h2>Get Gear Updates & Special Offers</h2>
+            <p>Subscribe to receive alerts about new arrivals, sales, and exclusive deals</p>
+            <form class="newsletter-form">
+                <input type="email" placeholder="Enter your email address" required>
+                <button type="submit" class="btn">Subscribe Now</button>
+            </form>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h4>About MotorBike World</h4>
+                    <p>Your trusted source for premium motorcycle gear and accessories. We specialize in safety equipment from global brands with expert advice.</p>
+                    <div class="social-links" style="margin-top: 1rem;">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Gear Categories</h4>
+                    <ul>
+                        <li><a href="#">Helmets</a></li>
+                        <li><a href="#">Riding Jackets</a></li>
+                        <li><a href="#">Gloves</a></li>
+                        <li><a href="#">Riding Boots</a></li>
+                        <li><a href="#">Protection Gear</a></li>
+                        <li><a href="#">Communication Systems</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Customer Services</h4>
+                    <ul>
+                        <li><a href="#">Size Guide</a></li>
+                        <li><a href="#">Shipping & Returns</a></li>
+                        <li><a href="#">Product Care</a></li>
+                        <li><a href="#">Gear Safety Ratings</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Contact Info</h4>
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt"></i> Moi Avenue, Nairobi, Kenya</li>
+                        <li><i class="fas fa-phone"></i> +254 700 123 456</li>
+                        <li><i class="fas fa-envelope"></i> gear@motorbikeworld.co.ke</li>
+                        <li><i class="fas fa-clock"></i> Mon-Fri: 8:30AM - 6PM</li>
+                        <li><i class="fas fa-clock"></i> Sat: 9AM - 4PM</li>
+                        <li><i class="fas fa-clock"></i> Sun: Closed</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2023 MotorBike World. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+    
+<script src="./gear script.js"></script>   
+</body>
+</html>
