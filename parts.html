@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Motorcycle Parts - MotorBike World</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./parts.css">
+</head>
+<body>
+    <!-- Fixed Navigation Bar -->
+    <div class="navbar-container" id="navbar">
+        <div class="container">
+            <nav class="navbar">
+                <a href="#" class="logo">MOTO<span>BIKE</span> WORLD</a>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="new bikes.html">New Bikes</a></li>
+                    <li><a href="used bikes.html">Used Bikes</a></li>
+                    <li><a href="gear & accessories.html">Gear & Accessories</a></li>
+                    <li><a href="parts.html" class="active">Parts</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+                <button class="mobile-menu-btn">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </nav>
+        </div>
+    </div>
+    
+    <!-- Parts Hero Section -->
+    <section class="parts-hero">
+        <div class="container">
+            <h1>Premium Motorcycle Parts</h1>
+            <p>Find genuine and aftermarket parts for all major motorcycle brands. Quality components to keep your bike running smoothly.</p>
+            <div class="hero-buttons">
+                <a href="#parts" class="btn">Browse Parts</a>
+                <a href="#offers" class="btn btn-outline">Special Deals</a>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Filter Section -->
+    <section class="filter-section">
+        <div class="container">
+            <div class="filter-container">
+                <div class="filter-group">
+                    <label for="part-type">Part Type</label>
+                    <select id="part-type">
+                        <option value="all">All Parts</option>
+                        <option value="engine">Engine Parts</option>
+                        <option value="brakes">Brakes & Clutch</option>
+                        <option value="suspension">Suspension</option>
+                        <option value="electrical">Electrical</option>
+                        <option value="exhaust">Exhaust Systems</option>
+                        <option value="tires">Tires & Wheels</option>
+                    </select>
+                </div>
+                
+                <div class="filter-group">
+                    <label for="brand">Brand</label>
+                    <select id="brand">
+                        <option value="all">All Brands</option>
+                        <option value="honda">Honda</option>
+                        <option value="yamaha">Yamaha</option>
+                        <option value="brembo">Brembo</option>
+                        <option value="bosch">Bosch</option>
+                        <option value="ohlins">Öhlins</option>
+                        <option value="akrapovic">Akrapovič</option>
+                    </select>
+                </div>
+                
+                <div class="filter-group">
+                    <label for="bike-brand">Bike Brand</label>
+                    <select id="bike-brand">
+                        <option value="all">All Models</option>
+                        <option value="honda">Honda</option>
+                        <option value="yamaha">Yamaha</option>
+                        <option value="bajaj">Bajaj</option>
+                        <option value="suzuki">Suzuki</option>
+                        <option value="tvs">TVS</option>
+                        <option value="hero">Hero</option>
+                    </select>
+                </div>
+                
+                <div class="filter-group">
+                    <label for="price">Price Range</label>
+                    <div class="price-range">
+                        <input type="number" placeholder="Min" id="min-price" value="500">
+                        <span>-</span>
+                        <input type="number" placeholder="Max" id="max-price" value="5000">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Parts Showcase -->
+    <section class="parts-showcase" id="parts">
+        <div class="container">
+            <div class="section-title">
+                <h2>Quality Motorcycle Parts</h2>
+                <p>Genuine and aftermarket parts for all major brands</p>
+            </div>
+            
+            <div class="parts-grid">
+                <div class="part-card">
+                    <div class="part-badge">Top Seller</div>
+                    <div class="part-image">
+                        <img src="./assets/EBC_Racing_Products_MC-4.jpg" alt="Brake Disc">
+                    </div>
+                    <div class="part-info">
+                        <div class="part-category">Brakes</div>
+                        <h3 class="part-name">Performance Brake Disc</h3>
+                        <div class="part-price">Ksh 4,500</div>
+                        
+                        <div class="part-description">
+                            High-performance brake disc for improved stopping power and heat dissipation. Compatible with multiple bike models.
+                        </div>
+                        
+                        <div class="part-specs">
+                            <span class="spec-item">Steel</span>
+                            <span class="spec-item">300mm</span>
+                            <span class="spec-item">Drilled</span>
+                        </div>
+                        
+                        <div class="part-meta">
+                            <a href="#" class="btn">View Details</a>
+                            <a href="#" class="btn" style="background: var(--secondary);">Add to Cart</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="part-card">
+                    <div class="part-badge">New</div>
+                    <div class="part-image">
+                        <img src="./assets/air filter.avif" alt="Air Filter">
+                    </div>
+                    <div class="part-info">
+                        <div class="part-category">Air Intake</div>
+                        <h3 class="part-name">Performance Air Filter</h3>
+                        <div class="part-price">Ksh 2,200</div>
+                        
+                        <div class="part-description">
+                            High-flow air filter for improved engine performance and fuel efficiency. Washable and reusable design.
+                        </div>
+                        
+                        <div class="part-specs">
+                            <span class="spec-item">Washable</span>
+                            <span class="spec-item">High-flow</span>
+                            <span class="spec-item">Universal</span>
+                        </div>
+                        
+                        <div class="part-meta">
+                            <a href="#" class="btn">View Details</a>
+                            <a href="#" class="btn" style="background: var(--secondary);">Add to Cart</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="part-card">
+                    <div class="part-badge">Sale</div>
+                    <div class="part-image">
+                        <img src="./assets/sprocket.jpeg" alt="Chain Kit">
+                    </div>
+                    <div class="part-info">
+                        <div class="part-category">Drive System</div>
+                        <h3 class="part-name">Premium Chain & Sprocket Kit</h3>
+                        <div class="part-price">Ksh 8,900</div>
+                        
+                        <div class="part-description">
+                            Complete chain and sprocket kit for smooth power transmission. X-ring chain for extended durability.
+                        </div>
+                        
+                        <div class="part-specs">
+                            <span class="spec-item">O-ring</span>
+                            <span class="spec-item">520 Pitch</span>
+                            <span class="spec-item">Steel</span>
+                        </div>
+                        
+                        <div class="part-meta">
+                            <a href="#" class="btn">View Details</a>
+                            <a href="#" class="btn" style="background: var(--secondary);">Add to Cart</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="part-card">
+                    <div class="part-badge">Genuine</div>
+                    <div class="part-image">
+                        <img src="./assets/iridium.jpg" alt="Spark Plug">
+                    </div>
+                    <div class="part-info">
+                        <div class="part-category">Ignition</div>
+                        <h3 class="part-name">Iridium Spark Plug (Set of 4)</h3>
+                        <div class="part-price">Ksh 3,800</div>
+                        
+                        <div class="part-description">
+                            Genuine iridium spark plugs for improved combustion efficiency and longer service life.
+                        </div>
+                        
+                        <div class="part-specs">
+                            <span class="spec-item">Iridium</span>
+                            <span class="spec-item">Long life</span>
+                            <span class="spec-item">Set of 4</span>
+                        </div>
+                        
+                        <div class="part-meta">
+                            <a href="#" class="btn">View Details</a>
+                            <a href="#" class="btn" style="background: var(--secondary);">Add to Cart</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="part-card">
+                    <div class="part-badge">Performance</div>
+                    <div class="part-image">
+                        <img src="./assets/akrapovich.webp" alt="Exhaust">
+                    </div>
+                    <div class="part-info">
+                        <div class="part-category">Exhaust</div>
+                        <h3 class="part-name">Sport Exhaust System</h3>
+                        <div class="part-price">Ksh 18,500</div>
+                        
+                        <div class="part-description">
+                            Performance exhaust system with increased flow and sporty sound. Stainless steel construction.
+                        </div>
+                        
+                        <div class="part-specs">
+                            <span class="spec-item">Stainless Steel</span>
+                            <span class="spec-item">Carbon Tip</span>
+                            <span class="spec-item">Performance</span>
+                        </div>
+                        
+                        <div class="part-meta">
+                            <a href="#" class="btn">View Details</a>
+                            <a href="#" class="btn" style="background: var(--secondary);">Add to Cart</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="part-card">
+                    <div class="part-badge">Value</div>
+                    <div class="part-image">
+                        <img src="./assets/bridgestone-motorcycle-portfolio-tires-web.jpg" alt="Tires">
+                    </div>
+                    <div class="part-info">
+                        <div class="part-category">Tires</div>
+                        <h3 class="part-name">All-Season Tires (Pair)</h3>
+                        <div class="part-price">Ksh 15,900</div>
+                        
+                        <div class="part-description">
+                            High-quality all-season tires for excellent grip in various conditions. Durable compound with long tread life.
+                        </div>
+                        
+                        <div class="part-specs">
+                            <span class="spec-item">120/70-17</span>
+                            <span class="spec-item">All-season</span>
+                            <span class="spec-item">Pair</span>
+                        </div>
+                        
+                        <div class="part-meta">
+                            <a href="#" class="btn">View Details</a>
+                            <a href="#" class="btn" style="background: var(--secondary);">Add to Cart</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Parts Brands Section -->
+    <section class="parts-brands">
+        <div class="container">
+            <div class="section-title">
+                <h2>Trusted Parts Brands</h2>
+                <p>Quality components from leading manufacturers</p>
+            </div>
+            
+            <div class="brands-grid">
+                <div class="brand-item">
+                    <img src="./assets/honda.png" alt="Honda" style="height: 120px;">
+                </div>
+                <div class="brand-item">
+                    <img src="./assets/yamaha.png" alt="Yamaha" style="height: 80px; border-radius: 5px">
+                </div>
+                <div class="brand-item">
+                    <img src="./assets/Brembo-Logo.png" alt="Brembo" style="height: 70px; border-radius: 5px;">
+                </div>
+                <div class="brand-item">
+                    <img src="./assets/aka logo.webp" alt="Akrapovic" style="height: 50px;">
+                </div>
+                <div class="brand-item">
+                    <img src="./assets/Bosch_logo.webp" alt="Bosch" style="height: 100px; border: 8px;">
+                </div>
+                <div class="brand-item">
+                    <img src="./assets/ohlins.png" alt="Öhlins" style="height: 120px;">
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Special Offers -->
+    <section class="special-offers" id="offers">
+        <div class="container">
+            <div class="section-title">
+                <h2>Parts Special Offers</h2>
+                <p>Great deals on quality motorcycle components</p>
+            </div>
+            
+            <div class="offers-grid">
+                <div class="offer-card">
+                    <div class="offer-badge">Free Shipping</div>
+                    <h3>Brake System Special</h3>
+                    <p>Complete brake system overhaul kits with free shipping on orders over Ksh 10,000.</p>
+                    
+                    <div class="offer-details">
+                        <div class="offer-price">Save up to 25%</div>
+                        <p>Discs, pads, and fluid included</p>
+                        <a href="#" class="btn" style="margin-top: 1rem;">Shop Now</a>
+                    </div>
+                </div>
+                
+                <div class="offer-card">
+                    <div class="offer-badge">Combo Deal</div>
+                    <h3>Chain & Sprocket Kit</h3>
+                    <p>Premium chain and sprocket kits with free installation at our service center.</p>
+                    
+                    <div class="offer-details">
+                        <div class="offer-price">Ksh 7,990</div>
+                        <p>Limited time offer</p>
+                        <a href="#" class="btn" style="margin-top: 1rem;">Get Deal</a>
+                    </div>
+                </div>
+                
+                <div class="offer-card">
+                    <div class="offer-badge">Seasonal Offer</div>
+                    <h3>Tire Replacement Package</h3>
+                    <p>Buy any set of tires and get free balancing and installation service.</p>
+                    
+                    <div class="offer-details">
+                        <div class="offer-price">Save Ksh 2,500</div>
+                        <p>All major brands included</p>
+                        <a href="#" class="btn" style="margin-top: 1rem;">Claim Offer</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Testimonials Section -->
+    <!-- <section class="testimonials">
+        <div class="container">
+            <div class="section-title">
+                <h2>Customer Experiences</h2>
+                <p>What riders say about our parts and service</p>
+            </div>
+            
+            <div class="testimonial-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        "I purchased a Brembo brake kit for my Yamaha R15 and the difference is incredible. The stopping power is amazing and the installation guide was very helpful."
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">
+                            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=100&q=80" alt="James Kariuki">
+                        </div>
+                        <div class="author-info">
+                            <h4>James Kariuki</h4>
+                            <p>Yamaha R15 Owner</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        "The performance air filter I bought for my Bajaj Pulsar has improved both power and fuel efficiency. Genuine parts at reasonable prices."
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">
+                            <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=100&q=80" alt="Sarah Mwangi">
+                        </div>
+                        <div class="author-info">
+                            <h4>Sarah Mwangi</h4>
+                            <p>Bajaj Pulsar Owner</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        "I was skeptical about ordering parts online, but MotorBike World made the process easy. The chain and sprocket kit arrived quickly and was exactly as described."
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">
+                            <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&w=100&q=80" alt="David Omondi">
+                        </div>
+                        <div class="author-info">
+                            <h4>David Omondi</h4>
+                            <p>Suzuki GSX Owner</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+    
+    <!-- Newsletter Section -->
+    <section class="newsletter">
+        <div class="container">
+            <h2>Stay Updated on Parts & Deals</h2>
+            <p>Subscribe to receive alerts on new arrivals and special promotions</p>
+            <form class="newsletter-form">
+                <input type="email" placeholder="Enter your email address" required>
+                <button type="submit" class="btn">Subscribe Now</button>
+            </form>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h4>About MotorBike World</h4>
+                    <p>Your trusted source for quality motorcycle parts. We specialize in genuine and aftermarket components for all major brands with expert advice.</p>
+                    <div class="social-links" style="margin-top: 1rem;">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Parts Categories</h4>
+                    <ul>
+                        <li><a href="#">Engine Components</a></li>
+                        <li><a href="#">Brakes & Suspension</a></li>
+                        <li><a href="#">Electrical Systems</a></li>
+                        <li><a href="#">Exhaust Systems</a></li>
+                        <li><a href="#">Tires & Wheels</a></li>
+                        <li><a href="#">Accessories</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Customer Support</h4>
+                    <ul>
+                        <li><a href="#">Part Finder Tool</a></li>
+                        <li><a href="#">Installation Guides</a></li>
+                        <li><a href="#">Warranty Information</a></li>
+                        <li><a href="#">Returns & Exchanges</a></li>
+                        <li><a href="#">FAQs</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Contact Info</h4>
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt"></i> Moi Avenue, Nairobi, Kenya</li>
+                        <li><i class="fas fa-phone"></i> +254 700 123 456</li>
+                        <li><i class="fas fa-envelope"></i> parts@motorbikeworld.co.ke</li>
+                        <li><i class="fas fa-clock"></i> Mon-Fri: 8:30AM - 6PM</li>
+                        <li><i class="fas fa-clock"></i> Sat: 9AM - 4PM</li>
+                        <li><i class="fas fa-clock"></i> Sun: Closed</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 MotorBike World. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+<script src="./parts.js"></script>
+</body>
+</html>

@@ -685,6 +685,20 @@
             font-size: 0.9rem;
             font-weight: 500;
         }
+            .social-links {
+            display: flex;
+            gap: 1rem;
+        }
+        
+        .social-links a {
+            color: white;
+            transition: var(--transition);
+        }
+        
+        .social-links a:hover {
+            color: var(--accent);
+        }
+        
         
         /* Responsive */
         @media (max-width: 1200px) {
