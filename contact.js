@@ -1,4 +1,4 @@
-  
+
         // Navbar scroll effect
         const navbar = document.getElementById('navbar');
         window.addEventListener('scroll', function() {
@@ -23,6 +23,23 @@
                 icon.classList.remove('fa-times');
                 icon.classList.add('fa-bars');
             }
+        });
+        
+        // Contact form submission
+        const contactForm = document.getElementById('contactForm');
+        contactForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Thank you for your message! Our team will contact you shortly.');
+            contactForm.reset();
+        });
+        
+        // FAQ accordion functionality
+        const faqItems = document.querySelectorAll('.faq-item');
+        faqItems.forEach(item => {
+            const question = item.querySelector('.faq-question');
+            question.addEventListener('click', () => {
+                item.classList.toggle('active');
+            });
         });
         
         // Smooth scrolling for anchor links

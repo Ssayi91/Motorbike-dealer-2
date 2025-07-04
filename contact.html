@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - MotorBike World</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+    <!-- Fixed Navigation Bar -->
+    <div class="navbar-container" id="navbar">
+        <div class="container">
+            <nav class="navbar">
+                <a href="#" class="logo">M<span>B</span>W</a>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="new bikes.html">New Bikes</a></li>
+                    <li><a href="used bikes.html">Used Bikes</a></li>
+                    <li><a href="gear & accessories.html">Gear & Accessories</a></li>
+                    <li><a href="parts.html">Parts</a></li>
+                    <li><a href="service.html">Services</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html" class="active">Contact</a></li>
+                </ul>
+                <button class="mobile-menu-btn">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </nav>
+        </div>
+    </div>
+    
+    <!-- Contact Hero Section -->
+    <section class="contact-hero">
+        <div class="container">
+            <h1>Get In Touch With Us</h1>
+            <p>Our team is ready to answer your questions, schedule service appointments, or help you find your perfect motorcycle. Reach out today!</p>
+            <div class="hero-buttons">
+                <a href="#contact" class="btn">Contact Form</a>
+                <a href="#map" class="btn btn-outline">Visit Us</a>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Contact Section -->
+    <section class="contact-section" id="contact">
+        <div class="container">
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h2>Contact Information</h2>
+                    <p>We're here to help with any inquiries about motorcycles, parts, service, or events. Our knowledgeable team is ready to assist you.</p>
+                    
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div class="contact-text">
+                                <h4>Our Location</h4>
+                                <p>123 Moi Avenue, Nairobi, Kenya</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <div class="contact-text">
+                                <h4>Phone</h4>
+                                <p>+254 700 123 456</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <div class="contact-text">
+                                <h4>Email</h4>
+                                <p>info@motorbikeworld.co.ke</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-hours">
+                        <h3>Business Hours</h3>
+                        <ul class="hours-list">
+                            <li><span>Monday - Friday</span> <span>8:30 AM - 6:00 PM</span></li>
+                            <li><span>Saturday</span> <span>9:00 AM - 4:00 PM</span></li>
+                            <li><span>Sunday</span> <span>Closed</span></li>
+                            <li><span>Public Holidays</span> <span>Closed</span></li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="contact-form">
+                    <h3 class="form-title">Send Us a Message</h3>
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Full Name</label>
+                            <input type="text" id="name" class="form-control" required placeholder="Your name">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" class="form-control" required placeholder="Your email">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" class="form-control" placeholder="Your phone number">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="department">Department</label>
+                            <select id="department" class="form-control">
+                                <option value="">Select department</option>
+                                <option value="sales">Sales - New Bikes</option>
+                                <option value="used">Sales - Used Bikes</option>
+                                <option value="parts">Parts Department</option>
+                                <option value="service">Service Department</option>
+                                <option value="events">Events & Sponsorships</option>
+                                <option value="general">General Inquiry</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" class="form-control" required placeholder="Message subject">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Your Message</label>
+                            <textarea id="message" class="form-control" required placeholder="How can we help you?"></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Departments -->
+    <section class="departments">
+        <div class="container">
+            <div class="section-title">
+                <h2>Contact Our Departments</h2>
+                <p>Get in touch with the right team for your specific needs</p>
+            </div>
+            
+            <div class="departments-grid">
+                <div class="department-card">
+                    <div class="department-icon">
+                        <i class="fas fa-motorcycle"></i>
+                    </div>
+                    <h3>Sales Department</h3>
+                    <p>Find your perfect motorcycle with our expert sales team.</p>
+                    
+                    <div class="department-info">
+                        <p><i class="fas fa-phone"></i> +254 700 123 400</p>
+                        <p><i class="fas fa-envelope"></i> sales@motorbikeworld.co.ke</p>
+                    </div>
+                    <a href="#" class="btn">Contact Sales</a>
+                </div>
+                
+                <div class="department-card">
+                    <div class="department-icon">
+                        <i class="fas fa-tools"></i>
+                    </div>
+                    <h3>Service Department</h3>
+                    <p>Schedule maintenance, repairs, or custom work.</p>
+                    
+                    <div class="department-info">
+                        <p><i class="fas fa-phone"></i> +254 700 123 500</p>
+                        <p><i class="fas fa-envelope"></i> service@motorbikeworld.co.ke</p>
+                    </div>
+                    <a href="#" class="btn">Book Service</a>
+                </div>
+                
+                <div class="department-card">
+                    <div class="department-icon">
+                        <i class="fas fa-cogs"></i>
+                    </div>
+                    <h3>Parts Department</h3>
+                    <p>Genuine parts and accessories for your motorcycle.</p>
+                    
+                    <div class="department-info">
+                        <p><i class="fas fa-phone"></i> +254 700 123 600</p>
+                        <p><i class="fas fa-envelope"></i> parts@motorbikeworld.co.ke</p>
+                    </div>
+                    <a href="#" class="btn">Parts Inquiry</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Map Section -->
+    <section class="map-section" id="map">
+        <div class="container">
+            <div class="map-container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.817030935118!2d36.81921431475396!3d-1.283535799063343!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f10d7d2d5b5c9%3A0x4e1d6a3b3d5b5c9d!2sMoi%20Avenue%2C%20Nairobi!5e0!3m2!1sen!2ske!4v1651234567890!5m2!1sen!2ske" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+    </section>
+    
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Frequently Asked Questions</h2>
+                <p>Quick answers to common questions</p>
+            </div>
+            
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        What are your service center hours?
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <div class="faq-answer-content">
+                            <p>Our service center is open Monday to Friday from 8:30 AM to 6:00 PM, and on Saturdays from 9:00 AM to 4:00 PM. We're closed on Sundays and public holidays.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        Do I need an appointment for service?
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <div class="faq-answer-content">
+                            <p>While walk-ins are welcome, we highly recommend scheduling an appointment to ensure we can serve you promptly. You can book an appointment online or by calling our service department.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        What payment methods do you accept?
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <div class="faq-answer-content">
+                            <p>We accept all major credit and debit cards (Visa, MasterCard, American Express), mobile payments (M-Pesa), bank transfers, and cash. Financing options are also available for motorcycle purchases.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        Do you offer test rides?
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <div class="faq-answer-content">
+                            <p>Yes, we offer test rides for most models. Please bring your valid motorcycle license and proper riding gear. Contact our sales department to schedule a test ride appointment.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        How often should I service my motorcycle?
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <div class="faq-answer-content">
+                            <p>Service intervals vary by make and model, but generally we recommend a basic service every 3,000-5,000 km and a full service every 10,000 km. Refer to your owner's manual or contact our service department for specific recommendations.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Call to Action -->
+    <section class="contact-cta">
+        <div class="container">
+            <h2>Ready to Visit Our Showroom?</h2>
+            <p>Experience our full range of motorcycles, gear, and meet our expert team in person.</p>
+            <a href="#map" class="btn">Get Directions</a>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h4>About MotorBike World</h4>
+                    <p>Your premier destination for motorcycles, parts, gear, and expert service since 2008.</p>
+                    <div class="social-links-footer">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#">New Motorcycles</a></li>
+                        <li><a href="#">Used Motorcycles</a></li>
+                        <li><a href="#">Gear & Accessories</a></li>
+                        <li><a href="#">Parts Department</a></li>
+                        <li><a href="#">Service Center</a></li>
+                        <li><a href="#">Financing Options</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Customer Support</h4>
+                    <ul>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Warranty Information</a></li>
+                        <li><a href="#">Service Appointments</a></li>
+                        <li><a href="#">Returns & Exchanges</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Newsletter</h4>
+                    <p>Subscribe to get updates on new arrivals, special offers and events.</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Your email address" required>
+                        <button type="submit" class="btn">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 MotorBike World. All Rights Reserved. | Designed for riders, by riders</p>
+            </div>
+        </div>
+    </footer>
+
+<script src="contact.js"></script>
+</body>
+</html>
